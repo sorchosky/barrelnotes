@@ -1,0 +1,40 @@
+export const SAMPLE_BOTTLES = [
+  {
+    id: 'sample-1',
+    name: "Blanton's Original Single Barrel",
+    distillery: 'Buffalo Trace Distillery',
+    type: 'bourbon',
+    proof: 93,
+    price: 65,
+    status: 'tried',
+    rating: 9,
+    notes:
+      'Classic single barrel. Caramel, orange peel, vanilla. Long finish with a hint of oak. The spherical stopper is half the experience.',
+    dateAdded: '2025-11-14',
+  },
+  {
+    id: 'sample-2',
+    name: 'Lagavulin 16 Year',
+    distillery: 'Lagavulin Distillery',
+    type: 'scotch',
+    proof: 86,
+    price: 95,
+    status: 'tried',
+    rating: 8,
+    notes:
+      'Deeply peated. Iodine, sea salt, dried fruit underneath the smoke. A divisive bottle — once it clicks, you understand.',
+    dateAdded: '2025-12-01',
+  },
+  {
+    id: 'sample-3',
+    name: 'WhistlePig 10 Year Straight Rye',
+    distillery: 'WhistlePig Farm',
+    type: 'rye',
+    proof: 100,
+    price: 80,
+    status: 'wishlist',
+    rating: null,
+    notes: null,
+    dateAdded: '2026-01-10',
+  },
+]

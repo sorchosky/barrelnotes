@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --rule: rgba(26, 22, 18, 0.12);
+    --glow: rgba(200, 129, 58, 0.2);
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .label-eyebrow {
+    @apply font-sans font-semibold text-[10px] tracking-[0.18em] uppercase text-amber;
+  }
+
+  .chip {
+    @apply font-sans font-medium text-[11px] text-wheat bg-white/[0.08] rounded-full px-3 py-1;
+  }
+
+  .cask-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(26, 22, 18, 0.25) transparent;
+  }
+
+  .cask-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .cask-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .cask-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(26, 22, 18, 0.25);
+    border-radius: 3px;
+  }
+}
