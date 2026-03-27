@@ -40,7 +40,7 @@ If you cannot read a field clearly from the label, use null. Do not guess on pro
       .map((b) => `- ${b.name} (${b.type}): ${b.rating}/10. Notes: ${b.notes || 'none'}`)
       .join('\n')
 
-    return `Identify this whiskey bottle and evaluate whether this user would enjoy it.
+    return `Identify this whiskey bottle using the label and your knowledge of this specific bottling, then evaluate whether this user would enjoy it.
 
 The user has rated these bottles:
 ${bottleList}
@@ -50,7 +50,7 @@ Based on their taste history, evaluate how well this bottle matches their prefer
 ${jsonSchema}`
   }
 
-  return `Identify this whiskey bottle. The user has no rated bottles yet — provide a general critic-style assessment without personalization.
+  return `Identify this whiskey bottle using the label and your knowledge of this specific bottling. The user has no rated bottles yet — provide a general critic-style assessment drawing on your expertise.
 
 ${jsonSchema}`
 }
@@ -94,7 +94,7 @@ export default async function handler(req, res) {
         model: 'claude-haiku-4-5-20251001',
         max_tokens: 600,
         system:
-          'You are an expert whiskey reviewer and sommelier. Analyze bottle labels and provide detailed, accurate assessments. Always respond in valid JSON only. No markdown, no code blocks, no explanation outside the JSON.',
+          'You are an expert whiskey reviewer and sommelier with encyclopedic knowledge of whiskeys worldwide. When shown a bottle, identify it from the label and supplement with your full knowledge of that specific product — including flavor profile, production details, distillery notes, and critical reception. If you can identify the bottle, do not limit your response to what is printed on the label; use everything you know about it. Always respond in valid JSON only. No markdown, no code blocks, no explanation outside the JSON.',
         messages: [
           {
             role: 'user',
