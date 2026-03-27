@@ -15,8 +15,8 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
   if (viewMode === 'list') {
     return (
       <div
-        className="group flex items-center gap-4 bg-espresso rounded-xl px-5 py-4 border cursor-pointer hover:border-amber/25 transition-colors"
-        style={{ borderColor: 'rgba(255,255,255,0.06)' }}
+        className="group flex items-center gap-4 bg-white rounded-xl px-5 py-4 border cursor-pointer hover:border-amber/25 transition-colors"
+        style={{ borderColor: 'var(--rule)' }}
         onClick={() => onEdit(bottle)}
       >
         {/* Status dot */}
@@ -28,10 +28,10 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
 
         {/* Name + distillery */}
         <div className="flex-1 min-w-0">
-          <p className="font-display italic text-cream text-[16px] leading-snug truncate">
+          <p className="font-display text-ink text-[16px] leading-snug truncate">
             {name}
           </p>
-          <p className="font-sans text-[11px] text-wheat/50 truncate mt-0.5">
+          <p className="font-sans text-[11px] text-stone/70 truncate mt-0.5">
             {distillery}&nbsp;·&nbsp;{TYPE_LABEL[type] || type}
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
             <span className="font-sans font-bold text-[18px] leading-none text-amber">
               {rating}
             </span>
-            <span className="font-sans text-[10px] text-wheat/50">/10</span>
+            <span className="font-sans text-[10px] text-stone/60">/10</span>
           </div>
         )}
 
@@ -70,11 +70,11 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
   // Grid mode
   return (
     <div
-      className="group relative bg-espresso rounded-xl border overflow-hidden cursor-pointer hover:border-amber/30 transition-colors flex flex-col"
+      className="group relative bg-white rounded-xl border overflow-hidden cursor-pointer hover:border-amber/30 transition-colors flex flex-col"
       style={{
-        borderColor: 'rgba(255,255,255,0.06)',
+        borderColor: 'var(--rule)',
         backgroundImage:
-          'radial-gradient(circle at top right, rgba(200,129,58,0.15) 0%, transparent 60%)',
+          'radial-gradient(circle at top right, rgba(200,129,58,0.07) 0%, transparent 60%)',
       }}
       onClick={() => onEdit(bottle)}
     >
@@ -84,17 +84,17 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
           <span className="label-eyebrow">
             {status === 'tried' ? 'Tried' : 'Wishlist'}
           </span>
-          <span className="font-sans font-medium text-[10px] tracking-[0.12em] uppercase text-wheat/50">
+          <span className="font-sans font-medium text-[10px] tracking-[0.12em] uppercase text-stone/60">
             {TYPE_LABEL[type] || type}
           </span>
         </div>
 
         {/* Bottle name + distillery */}
         <div>
-          <h3 className="font-display italic font-[400] text-[22px] leading-[1.2] tracking-[-0.01em] text-cream">
+          <h3 className="font-display font-[400] text-[22px] leading-[1.2] tracking-[-0.01em] text-ink">
             {name}
           </h3>
-          <p className="font-sans text-[12px] text-wheat/55 mt-1.5">{distillery}</p>
+          <p className="font-sans text-[12px] text-stone/70 mt-1.5">{distillery}</p>
         </div>
 
         {/* Chips */}
@@ -108,7 +108,7 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
           <>
             <div
               className="h-px"
-              style={{ backgroundColor: 'rgba(255,255,255,0.07)' }}
+              style={{ backgroundColor: 'var(--rule)' }}
             />
             <TasteNotes rating={rating} notes={notes} viewMode={viewMode} />
           </>
@@ -121,7 +121,7 @@ export default function BottleCard({ bottle, viewMode, onEdit, onDelete }) {
           e.stopPropagation()
           onDelete(bottle.id)
         }}
-        className="absolute top-3 right-3 p-1.5 rounded-md bg-espresso/90 text-stone hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all"
+        className="absolute top-3 right-3 p-1.5 rounded-md bg-white/90 text-stone hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all"
         aria-label="Delete bottle"
       >
         <TrashIcon />

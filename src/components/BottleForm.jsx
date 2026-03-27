@@ -80,12 +80,12 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
 
   const inputClass = (field) =>
     [
-      'w-full bg-white/[0.04] border rounded-lg px-3 py-2.5',
-      'font-sans text-[14px] text-wheat placeholder-stone/40',
+      'w-full bg-ink/[0.04] border rounded-lg px-3 py-2.5',
+      'font-sans text-[14px] text-ink placeholder-stone/50',
       'focus:outline-none transition-colors',
       errors[field]
         ? 'border-red-400/50 focus:border-red-400/80'
-        : 'border-white/10 focus:border-amber/50',
+        : 'border-ink/10 focus:border-amber/50',
     ].join(' ')
 
   const labelClass =
@@ -99,20 +99,20 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
       }}
     >
       <div
-        className="bg-espresso border rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto cask-scroll flex flex-col"
-        style={{ borderColor: 'rgba(255,255,255,0.08)' }}
+        className="bg-white border rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto cask-scroll flex flex-col"
+        style={{ borderColor: 'var(--rule)' }}
       >
         {/* Modal header */}
         <div
           className="flex items-center justify-between px-6 py-5 border-b flex-shrink-0"
-          style={{ borderColor: 'rgba(255,255,255,0.08)' }}
+          style={{ borderColor: 'var(--rule)' }}
         >
-          <h2 className="font-display font-[500] text-[22px] text-cream tracking-[-0.01em]">
+          <h2 className="font-display font-[500] text-[22px] text-ink tracking-[-0.01em]">
             {isEditing ? 'Edit Bottle' : 'Add Bottle'}
           </h2>
           <button
             onClick={onClose}
-            className="p-2 rounded-lg text-stone hover:text-wheat transition-colors"
+            className="p-2 rounded-lg text-stone hover:text-ink transition-colors"
             aria-label="Close"
           >
             <CloseIcon />
@@ -133,7 +133,7 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
                     'font-sans font-medium text-[13px] capitalize transition-colors',
                     formData.status === s
                       ? 'bg-amber border-amber text-espresso'
-                      : 'border-white/10 text-stone hover:border-amber/30 hover:text-wheat',
+                      : 'border-ink/10 text-stone hover:border-amber/30 hover:text-ink',
                   ].join(' ')}
                 >
                   <input
@@ -201,7 +201,7 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
               className={inputClass('type') + ' cursor-pointer'}
             >
               {BOTTLE_TYPES.map((t) => (
-                <option key={t} value={t} className="bg-espresso text-wheat">
+                <option key={t} value={t} className="bg-white text-ink">
                   {t.charAt(0).toUpperCase() + t.slice(1)}
                 </option>
               ))}
@@ -299,7 +299,7 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
           {/* Footer */}
           <div
             className="flex items-center justify-between pt-4 border-t"
-            style={{ borderColor: 'rgba(255,255,255,0.08)' }}
+            style={{ borderColor: 'var(--rule)' }}
           >
             {/* Delete (edit mode only) */}
             {onDelete ? (
@@ -318,8 +318,8 @@ export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
               <button
                 type="button"
                 onClick={onClose}
-                className="font-sans font-medium text-[13px] text-stone hover:text-wheat px-4 py-2.5 rounded-lg border transition-colors"
-                style={{ borderColor: 'rgba(255,255,255,0.1)' }}
+                className="font-sans font-medium text-[13px] text-stone hover:text-ink px-4 py-2.5 rounded-lg border transition-colors"
+                style={{ borderColor: 'var(--rule)' }}
               >
                 Cancel
               </button>
