@@ -1,16 +1,16 @@
 export default function Header({ viewMode, onViewModeChange, onAddClick }) {
   return (
     <header
-      className="bg-espresso border-b"
-      style={{ borderColor: 'rgba(255,255,255,0.07)' }}
+      className="bg-white border-b"
+      style={{ borderColor: 'var(--rule)' }}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo / title */}
         <div>
-          <h1 className="font-display font-[500] text-2xl text-cream tracking-[-0.02em] leading-none">
+          <h1 className="font-display font-[500] text-2xl text-ink tracking-[-0.02em] leading-none">
             CaskBook
           </h1>
-          <p className="font-sans text-[10px] text-wheat/40 tracking-[0.14em] uppercase mt-0.5">
+          <p className="font-sans text-[10px] text-stone/60 tracking-[0.14em] uppercase mt-0.5">
             Digital Whiskey Log
           </p>
         </div>
@@ -18,13 +18,13 @@ export default function Header({ viewMode, onViewModeChange, onAddClick }) {
         {/* Controls */}
         <div className="flex items-center gap-3">
           {/* View toggle */}
-          <div className="flex items-center gap-1 bg-black/25 rounded-lg p-1">
+          <div className="flex items-center gap-1 bg-ink/[0.06] rounded-lg p-1">
             <button
               onClick={() => onViewModeChange('grid')}
               className={`p-2 rounded-md transition-colors ${
                 viewMode === 'grid'
                   ? 'bg-amber text-white'
-                  : 'text-wheat/40 hover:text-wheat/80'
+                  : 'text-stone/60 hover:text-stone'
               }`}
               aria-label="Grid view"
             >
@@ -35,7 +35,7 @@ export default function Header({ viewMode, onViewModeChange, onAddClick }) {
               className={`p-2 rounded-md transition-colors ${
                 viewMode === 'list'
                   ? 'bg-amber text-white'
-                  : 'text-wheat/40 hover:text-wheat/80'
+                  : 'text-stone/60 hover:text-stone'
               }`}
               aria-label="List view"
             >

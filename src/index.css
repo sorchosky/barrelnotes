@@ -23,7 +23,7 @@
   }
 
   .chip {
-    @apply font-sans font-medium text-[11px] text-wheat bg-white/[0.08] rounded-full px-3 py-1;
+    @apply font-sans font-medium text-[11px] text-stone bg-ink/[0.07] rounded-full px-3 py-1;
   }
 
   .cask-scroll {

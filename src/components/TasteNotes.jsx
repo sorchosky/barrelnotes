@@ -6,7 +6,7 @@ export default function TasteNotes({ rating, notes, viewMode }) {
         <span className="font-sans font-bold text-[20px] leading-none text-amber">
           {rating}
         </span>
-        <span className="font-sans font-normal text-[11px] text-wheat/60">/10</span>
+        <span className="font-sans font-normal text-[11px] text-stone/60">/10</span>
       </div>
 
       {/* Rating bar */}
@@ -23,7 +23,7 @@ export default function TasteNotes({ rating, notes, viewMode }) {
       {/* Tasting notes */}
       {notes && (
         <p
-          className={`font-sans text-[14px] leading-[1.65] text-wheat/70 ${
+          className={`font-sans text-[14px] leading-[1.65] text-stone/80 ${
             viewMode === 'grid' ? 'line-clamp-2' : ''
           }`}
         >
