@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react'
 
 const BOTTLE_TYPES = ['bourbon', 'rye', 'scotch', 'irish', 'japanese', 'other']
 
-export default function BottleForm({ bottle, onSubmit, onClose, onDelete }) {
+export default function BottleForm({ bottle, onSubmit, onClose, onDelete, initialData }) {
   const isEditing = bottle !== null
 
   const [formData, setFormData] = useState({
-    name:       bottle?.name       ?? '',
-    distillery: bottle?.distillery ?? '',
-    type:       bottle?.type       ?? 'bourbon',
-    proof:      bottle?.proof      ?? '',
+    name:       bottle?.name       ?? initialData?.name       ?? '',
+    distillery: bottle?.distillery ?? initialData?.distillery ?? '',
+    type:       bottle?.type       ?? initialData?.type       ?? 'bourbon',
+    proof:      bottle?.proof      ?? initialData?.proof      ?? '',
     price:      bottle?.price      ?? '',
-    status:     bottle?.status     ?? 'tried',
+    status:     bottle?.status     ?? initialData?.status     ?? 'tried',
     rating:     bottle?.rating     ?? null,
     notes:      bottle?.notes      ?? '',
   })

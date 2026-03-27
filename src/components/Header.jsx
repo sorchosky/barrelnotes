@@ -1,4 +1,6 @@
-export default function Header({ viewMode, onViewModeChange, onAddClick }) {
+import ScanButton from './ScanButton.jsx'
+
+export default function Header({ viewMode, onViewModeChange, onAddClick, onScanClick, isScanning, scanInputRef }) {
   return (
     <header
       className="bg-white border-b"
@@ -42,6 +44,13 @@ export default function Header({ viewMode, onViewModeChange, onAddClick }) {
               <ListIcon />
             </button>
           </div>
+
+          {/* Scan button */}
+          <ScanButton
+            onScan={onScanClick}
+            isScanning={isScanning}
+            inputRef={scanInputRef}
+          />
 
           {/* Add bottle */}
           <button

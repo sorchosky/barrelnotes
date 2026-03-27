@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Header from './components/Header.jsx'
 import FilterBar from './components/FilterBar.jsx'
 import BottleCard from './components/BottleCard.jsx'
 import BottleForm from './components/BottleForm.jsx'
+import ScanConfirmCard from './components/ScanConfirmCard.jsx'
 import { SAMPLE_BOTTLES } from './data/sampleBottles.js'
 
 const STORAGE_KEY = 'barrelnotes-bottles'
@@ -36,6 +37,16 @@ export default function App() {
 
   const [isFormOpen, setIsFormOpen]       = useState(false)
   const [editingBottle, setEditingBottle] = useState(null)
+  const [scanPrefill, setScanPrefill]     = useState(null)
+
+  const [isScanning, setIsScanning]         = useState(false)
+  const [scanResult, setScanResult]         = useState(null)
+  const [showScanConfirm, setShowScanConfirm] = useState(false)
+
+  const [toast, setToast] = useState(null)
+  const toastTimerRef = useRef(null)
+
+  const scanInputRef = useRef(null)
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(bottles))
@@ -44,6 +55,66 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem(VIEW_KEY, viewMode)
   }, [viewMode])
+
+  const showToast = (message) => {
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current)
+    setToast({ message })
+    toastTimerRef.current = setTimeout(() => setToast(null), 4000)
+  }
+
+  const handleScan = async (base64, mimeType) => {
+    setIsScanning(true)
+
+    const triedBottles = bottles
+      .filter((b) => b.status === 'tried')
+      .map(({ name, type, rating, notes }) => ({ name, type, rating, notes }))
+
+    try {
+      const res = await fetch('/api/scan', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ image: base64, mimeType, triedBottles }),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok || data.error) {
+        setIsScanning(false)
+        if (res.status === 429) {
+          showToast('Daily scan limit reached. Try again tomorrow.')
+        } else {
+          showToast("Couldn't read the bottle. Try a clearer photo of the front label.")
+        }
+        return
+      }
+
+      setIsScanning(false)
+      setScanResult(data)
+      setShowScanConfirm(true)
+    } catch {
+      setIsScanning(false)
+      showToast("Couldn't read the bottle. Try a clearer photo of the front label.")
+    }
+  }
+
+  const handleScanAddToWishlist = (prefill) => {
+    setShowScanConfirm(false)
+    setScanResult(null)
+    setScanPrefill(prefill)
+    setEditingBottle(null)
+    setIsFormOpen(true)
+  }
+
+  const handleScanAnother = () => {
+    setShowScanConfirm(false)
+    setScanResult(null)
+    scanInputRef.current?.click()
+  }
+
+  const handleScanDismiss = () => {
+    setShowScanConfirm(false)
+    setScanResult(null)
+  }
 
   const handleAddBottle = (formData) => {
     const newBottle = {
@@ -79,6 +150,7 @@ export default function App() {
 
   const handleOpenAdd = () => {
     setEditingBottle(null)
+    setScanPrefill(null)
     setIsFormOpen(true)
   }
 
@@ -90,6 +162,7 @@ export default function App() {
   const handleCloseForm = () => {
     setIsFormOpen(false)
     setEditingBottle(null)
+    setScanPrefill(null)
   }
 
   const filteredBottles = bottles.filter((b) => b.status === activeFilter)
@@ -102,6 +175,9 @@ export default function App() {
         viewMode={viewMode}
         onViewModeChange={setViewMode}
         onAddClick={handleOpenAdd}
+        onScanClick={handleScan}
+        isScanning={isScanning}
+        scanInputRef={scanInputRef}
       />
 
       <main className="max-w-6xl mx-auto px-6 py-10">
@@ -138,6 +214,7 @@ export default function App() {
       {isFormOpen && (
         <BottleForm
           bottle={editingBottle}
+          initialData={scanPrefill}
           onSubmit={editingBottle ? handleEditBottle : handleAddBottle}
           onClose={handleCloseForm}
           onDelete={
@@ -149,6 +226,30 @@ export default function App() {
               : null
           }
         />
+      )}
+
+      {showScanConfirm && scanResult && (
+        <ScanConfirmCard
+          result={scanResult}
+          onAddToWishlist={handleScanAddToWishlist}
+          onScanAnother={handleScanAnother}
+          onDismiss={handleScanDismiss}
+        />
+      )}
+
+      {toast && (
+        <div
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] font-sans font-normal text-[14px] text-cream pointer-events-none"
+          style={{
+            backgroundColor: 'var(--espresso, #2E2118)',
+            borderRadius: '8px',
+            padding: '12px 20px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {toast.message}
+        </div>
       )}
     </div>
   )
