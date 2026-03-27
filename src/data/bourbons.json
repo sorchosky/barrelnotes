@@ -1,0 +1,1613 @@
+[
+  {
+    "name": "Buffalo Trace",
+    "distillery": "Buffalo Trace",
+    "msrp": 30,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, honey, orange zest, light oak with a smooth finish",
+    "rating": 88,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Eagle Rare 10 Year",
+    "distillery": "Buffalo Trace",
+    "msrp": 40,
+    "proof": 90,
+    "age_statement": "10 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Toasted oak, dark cherry, leather, cocoa, toffee with lingering spice",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Blanton's Original Single Barrel",
+    "distillery": "Buffalo Trace",
+    "msrp": 65,
+    "proof": 93,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Honey, citrus, caramel, baking spice, vanilla with a warm oak finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Maker's Mark",
+    "distillery": "Maker's Mark",
+    "msrp": 30,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Caramel, vanilla, wheat bread, gentle fruit, soft oak finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Maker's Mark 46",
+    "distillery": "Maker's Mark",
+    "msrp": 40,
+    "proof": 94,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Rich caramel, vanilla, baking spice, toasted oak, dried fruit finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Maker's Mark Cask Strength",
+    "distillery": "Maker's Mark",
+    "msrp": 45,
+    "proof": 108,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "cask_strength"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Dense caramel, butterscotch, dark fruit, cinnamon, rich oak finish",
+    "rating": 92,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Woodford Reserve",
+    "distillery": "Woodford Reserve (Brown-Forman)",
+    "msrp": 38,
+    "proof": 90.4,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dried fruit, vanilla, toasted oak, chocolate, clean spice finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Woodford Reserve Double Oaked",
+    "distillery": "Woodford Reserve (Brown-Forman)",
+    "msrp": 55,
+    "proof": 90.4,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, toasted oak, dark fruit, vanilla custard, honey finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Wild Turkey 101",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 25,
+    "proof": 101,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, caramel, honey, rye spice, toasted oak, peppery finish",
+    "rating": 91,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Wild Turkey Rare Breed",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 55,
+    "proof": 116.8,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Honey, vanilla, caramel, warming spice, toasted pecan, long oak finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Russell's Reserve 10 Year",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 40,
+    "proof": 90,
+    "age_statement": "10 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, dried fruit, gentle oak, warm spice finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Russell's Reserve Single Barrel",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 65,
+    "proof": 110,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, vanilla, dried fruit, leather, deep oak, warming finish",
+    "rating": 92,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Elijah Craig Small Batch",
+    "distillery": "Heaven Hill",
+    "msrp": 30,
+    "proof": 94,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, caramel, toasted oak, dark fruit leather, gentle spice",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Elijah Craig Barrel Proof",
+    "distillery": "Heaven Hill",
+    "msrp": 60,
+    "proof": 131,
+    "age_statement": "12 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, toasted oak, dark chocolate, cherry, baking spice, long finish",
+    "rating": 95,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Elijah Craig Toasted Barrel",
+    "distillery": "Heaven Hill",
+    "msrp": 50,
+    "proof": 94,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Toasted marshmallow, vanilla, caramel, cinnamon, sweet oak finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Henry McKenna 10 Year",
+    "distillery": "Heaven Hill",
+    "msrp": 40,
+    "proof": 100,
+    "age_statement": "10 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond",
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, vanilla, toasted oak, dark cherry, warm baking spice finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Evan Williams Black Label",
+    "distillery": "Heaven Hill",
+    "msrp": 15,
+    "proof": 86,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Maple, vanilla, brown sugar, light oak, clean simple finish",
+    "rating": 86,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Evan Williams Single Barrel",
+    "distillery": "Heaven Hill",
+    "msrp": 30,
+    "proof": 86.6,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, honey, dried fruit, mild oak, smooth finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Evan Williams Bottled in Bond",
+    "distillery": "Heaven Hill",
+    "msrp": 18,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, corn sweetness, oak, baking spice, clean finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Heaven Hill Bottled in Bond 7 Year",
+    "distillery": "Heaven Hill",
+    "msrp": 40,
+    "proof": 100,
+    "age_statement": "7 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, toasted grain, honey, oak spice, medium finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Larceny Small Batch",
+    "distillery": "Heaven Hill",
+    "msrp": 25,
+    "proof": 92,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Butterscotch, honey, bread pudding, light fruit, gentle oak finish",
+    "rating": 87,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Larceny Barrel Proof",
+    "distillery": "Heaven Hill",
+    "msrp": 60,
+    "proof": 126,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof",
+      "small_batch"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Caramel, butterscotch, baked apple, creamy texture, cinnamon oak finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Old Fitzgerald Bottled in Bond",
+    "distillery": "Heaven Hill",
+    "msrp": 100,
+    "proof": 100,
+    "age_statement": "Varies",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Brown sugar, caramel, vanilla, baking spice, cinnamon, woody finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Four Roses Single Barrel",
+    "distillery": "Four Roses",
+    "msrp": 45,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Ripe plum, cherry, rich cocoa, vanilla, mellow spice, long finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Four Roses Small Batch",
+    "distillery": "Four Roses",
+    "msrp": 35,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Baking spice, fruit, vanilla, gentle rye kick, soft oak finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Four Roses Small Batch Select",
+    "distillery": "Four Roses",
+    "msrp": 55,
+    "proof": 104,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Rich caramel, dark cherry, vanilla, long oak finish, balanced spice",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Four Roses Yellow Label",
+    "distillery": "Four Roses",
+    "msrp": 22,
+    "proof": 80,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Light floral, fruit, honey, mild spice, gentle and approachable finish",
+    "rating": 85,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Knob Creek 9 Year",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 35,
+    "proof": 100,
+    "age_statement": "9 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich maple, toasted nut, vanilla, oak, warm spice, full-bodied finish",
+    "rating": 91,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Knob Creek 12 Year",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 50,
+    "proof": 100,
+    "age_statement": "12 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich vanilla, oak, dried fruit, caramel, baking spice, long finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Knob Creek Single Barrel Reserve",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 50,
+    "proof": 120,
+    "age_statement": "9 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dense caramel, maple, toasted pecan, leather, assertive oak finish",
+    "rating": 92,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Jim Beam White Label",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 18,
+    "proof": 80,
+    "age_statement": "4 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Light vanilla, corn sweetness, mild oak, clean simple finish",
+    "rating": 82,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Jim Beam Black",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 23,
+    "proof": 86,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, toasted oak, mild spice, medium smooth finish",
+    "rating": 86,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Jim Beam Double Oak",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 23,
+    "proof": 86,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, caramel, toasted oak, brown sugar, mild spice finish",
+    "rating": 86,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Basil Hayden's",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 40,
+    "proof": 80,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Light spice, tea, citrus, honey, gentle peppery finish",
+    "rating": 87,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Baker's 7 Year Single Barrel",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 65,
+    "proof": 107,
+    "age_statement": "7 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich fruit, vanilla, toasted grain, brown sugar, oak spice finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Booker's Bourbon",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 90,
+    "proof": 126,
+    "age_statement": "6-8 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Creamy vanilla, caramel, honeycomb, toasted oak, butterscotch finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Old Grand-Dad 114",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 30,
+    "proof": 114,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Bold caramel, orange peel, cinnamon, warming oak spice, rye kick finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Grand-Dad Bottled in Bond",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 25,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Caramel corn, rye spice, orange, vanilla, peppery oak finish",
+    "rating": 88,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester 86",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 22,
+    "proof": 86,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Banana, caramel, gentle oak, floral, clean straightforward finish",
+    "rating": 87,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester 100 Proof",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 25,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, oak, banana, chocolate, cinnamon, medium warm finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester 1897 Bottled in Bond",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 45,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark caramel, cherry, chocolate, toasted oak, spiced fruit finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester 1910 Old Fine Whisky",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 55,
+    "proof": 93.2,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark cherry, rich oak, chocolate, molasses, coffee, lingering char finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester 1920 Prohibition Style",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 60,
+    "proof": 115,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Maple syrup, toffee, oak, mint, dark chocolate, warming rich finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Angel's Envy",
+    "distillery": "Angel's Envy (Bacardi)",
+    "msrp": 50,
+    "proof": 86.6,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Port wine sweetness, vanilla, ripe fruit, maple, soft oak finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "1792 Small Batch",
+    "distillery": "Barton 1792 (Sazerac)",
+    "msrp": 30,
+    "proof": 93.7,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Caramel, vanilla, spice, dried fruit, moderate oak, clean finish",
+    "rating": 88,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "1792 Full Proof",
+    "distillery": "Barton 1792 (Sazerac)",
+    "msrp": 45,
+    "proof": 125,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Bold caramel, dark chocolate, baking spice, oak, full-bodied finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "1792 Bottled in Bond",
+    "distillery": "Barton 1792 (Sazerac)",
+    "msrp": 38,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Caramel, vanilla, rye spice, orange, moderate oak, balanced finish",
+    "rating": 89,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Bulleit Bourbon",
+    "distillery": "Bulleit (Diageo)",
+    "msrp": 30,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Spicy rye, maple, dried oak, vanilla, toffee, dry spice finish",
+    "rating": 87,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Bulleit Bourbon 10 Year",
+    "distillery": "Bulleit (Diageo)",
+    "msrp": 45,
+    "proof": 91.2,
+    "age_statement": "10 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Deep oak, dried fruit, vanilla, smoky oak, long spice finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Michter's US*1 Small Batch",
+    "distillery": "Michter's",
+    "msrp": 45,
+    "proof": 91.4,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, dried fruit, vanilla, toasted marshmallow, balanced oak finish",
+    "rating": 91,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Michter's US*1 Single Barrel",
+    "distillery": "Michter's",
+    "msrp": 55,
+    "proof": 94.4,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, cherry, vanilla, toasted oak, chocolate, warm spice finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Michter's 10 Year Single Barrel",
+    "distillery": "Michter's",
+    "msrp": 170,
+    "proof": 94.4,
+    "age_statement": "10 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Deep caramel, dried fruit, seasoned oak, vanilla, dark chocolate finish",
+    "rating": 95,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Weller Special Reserve",
+    "distillery": "Buffalo Trace",
+    "msrp": 25,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Caramel, honey, wheat sweetness, gentle vanilla, soft oak finish",
+    "rating": 87,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Weller Antique 107",
+    "distillery": "Buffalo Trace",
+    "msrp": 30,
+    "proof": 107,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Caramel, cinnamon, dark fruit, vanilla, spicy wheat, warming finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Weller Full Proof",
+    "distillery": "Buffalo Trace",
+    "msrp": 50,
+    "proof": 114,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Caramel, vanilla, baked fruit, rich wheat, luxurious texture, oak finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "E.H. Taylor Small Batch",
+    "distillery": "Buffalo Trace",
+    "msrp": 40,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, oak, dried fruit, butterscotch, lingering spice finish",
+    "rating": 92,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "E.H. Taylor Single Barrel",
+    "distillery": "Buffalo Trace",
+    "msrp": 65,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond",
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Bold oak, dried fruit, caramel, vanilla, spice, long complex finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Stagg Jr. (George T. Stagg Jr.)",
+    "distillery": "Buffalo Trace",
+    "msrp": 55,
+    "proof": 131,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark fruit, caramel, oak, cherry, chocolate, powerful warming finish",
+    "rating": 95,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Elmer T. Lee Single Barrel",
+    "distillery": "Buffalo Trace",
+    "msrp": 40,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Honey, floral, vanilla, light fruit, gentle spice, smooth easy finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "allocated"
+  },
+  {
+    "name": "Benchmark Old No. 8",
+    "distillery": "Buffalo Trace",
+    "msrp": 12,
+    "proof": 80,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Mild vanilla, corn sweetness, light oak, simple clean finish",
+    "rating": 83,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "New Riff Bottled in Bond",
+    "distillery": "New Riff",
+    "msrp": 40,
+    "proof": 100,
+    "age_statement": "4 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Herbal, dark fruit, butterscotch, rye spice, oaky warming finish",
+    "rating": 90,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "New Riff Single Barrel",
+    "distillery": "New Riff",
+    "msrp": 55,
+    "proof": 107,
+    "age_statement": "4 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Cherry, caramel, rye spice, toasted oak, cinnamon, balanced finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Rabbit Hole Dareringer",
+    "distillery": "Rabbit Hole",
+    "msrp": 55,
+    "proof": 93.2,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark fruit, sherry sweetness, caramel, vanilla, silky smooth finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Bardstown Bourbon Fusion Series",
+    "distillery": "Bardstown Bourbon Company",
+    "msrp": 60,
+    "proof": 98.9,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Fruit-forward, well-balanced caramel, vanilla, oak, soft spice finish",
+    "rating": 91,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Blood Oath Pact",
+    "distillery": "Lux Row Distillers",
+    "msrp": 80,
+    "proof": 98.6,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Forest fruits, caramel, baked goods, berry, butterscotch, rich finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "limited"
+  },
+  {
+    "name": "Widow Jane 10 Year",
+    "distillery": "Widow Jane",
+    "msrp": 90,
+    "proof": 91,
+    "age_statement": "10 Years",
+    "type": "Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Cherry, caramel, vanilla, velvety smooth, warm oak, lingering finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Smoke Wagon Uncut Unfiltered",
+    "distillery": "Nevada H&C Distilling",
+    "msrp": 55,
+    "proof": 115,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Caramel, cherry, praline, oak, baking spice, bold viscous finish",
+    "rating": 93,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Smoke Wagon Small Batch",
+    "distillery": "Nevada H&C Distilling",
+    "msrp": 40,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Vanilla, caramel, cherry, rye spice, toasted oak, clean finish",
+    "rating": 90,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Remus Repeal Reserve",
+    "distillery": "MGP / Ross & Squibb",
+    "msrp": 90,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Rich oak, dark fruit, caramel, leather, tobacco, long complex finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "limited"
+  },
+  {
+    "name": "Yellowstone Limited Edition",
+    "distillery": "Limestone Branch",
+    "msrp": 100,
+    "proof": 101,
+    "age_statement": "Varies",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, dark fruit, toasted oak, leather, baking spice, long finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "limited"
+  },
+  {
+    "name": "Wilderness Trail Single Barrel",
+    "distillery": "Wilderness Trail",
+    "msrp": 55,
+    "proof": 100,
+    "age_statement": "6 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond",
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Butterscotch, toasted grain, fruit, oak, baking spice, clean finish",
+    "rating": 91,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Tub Bottled in Bond",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 25,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Peanut, vanilla, corn, toasted grain, mild oak, straightforward finish",
+    "rating": 87,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Forester Statesman",
+    "distillery": "Old Forester (Brown-Forman)",
+    "msrp": 55,
+    "proof": 95,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, dried fruit, oak, cocoa, banana, warm medium finish",
+    "rating": 88,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Rebel 100",
+    "distillery": "Lux Row Distillers",
+    "msrp": 20,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "wheated",
+    "tasting_notes": "Vanilla, caramel, light wheat sweetness, corn, mild oak finish",
+    "rating": 86,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Very Old Barton 100 Proof",
+    "distillery": "Barton 1792 (Sazerac)",
+    "msrp": 18,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, corn, vanilla, light oak, clean simple affordable finish",
+    "rating": 86,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Ezra Brooks 99",
+    "distillery": "Lux Row Distillers",
+    "msrp": 22,
+    "proof": 99,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, toasted corn, brown sugar, mild spice finish",
+    "rating": 87,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Chattanooga Whiskey 111 Cask",
+    "distillery": "Chattanooga Whiskey",
+    "msrp": 45,
+    "proof": 111,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Toasted grain, caramel, cherry, cinnamon, oak, smooth finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Kentucky Spirit (Wild Turkey)",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 55,
+    "proof": 101,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "single_barrel"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, honey, toasted oak, caramel, spice, medium clean finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Russell's Reserve 13 Year",
+    "distillery": "Wild Turkey (Campari)",
+    "msrp": 90,
+    "proof": 114.8,
+    "age_statement": "13 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, vanilla, dried fruit, deep oak, spice, complex long finish",
+    "rating": 96,
+    "rating_source": "VinePair",
+    "availability": "allocated"
+  },
+  {
+    "name": "Jefferson's Reserve",
+    "distillery": "Castle Brands",
+    "msrp": 50,
+    "proof": 90.2,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, dried fruit, cedar, oak, smooth medium finish",
+    "rating": 88,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Jefferson's Ocean Aged at Sea",
+    "distillery": "Castle Brands",
+    "msrp": 80,
+    "proof": 90,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Salted caramel, vanilla, gentle brine, oak, smooth unique finish",
+    "rating": 89,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Garrison Brothers Small Batch",
+    "distillery": "Garrison Brothers",
+    "msrp": 80,
+    "proof": 94,
+    "age_statement": "NAS",
+    "type": "Texas Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, oak, dark fruit, leather, brown sugar, bold Texas finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Balcones True Blue",
+    "distillery": "Balcones",
+    "msrp": 35,
+    "proof": 92,
+    "age_statement": "NAS",
+    "type": "Straight Corn Whisky",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Roasted blue corn, caramel, toasted oak, dark fruit, unique earthy finish",
+    "rating": 89,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Barrell Bourbon (Batch Release)",
+    "distillery": "Barrell Craft Spirits",
+    "msrp": 90,
+    "proof": 115,
+    "age_statement": "Varies",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark fruit, caramel, chocolate, oak, spice, complex layered finish",
+    "rating": 93,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Barrell Bourbon Dovetail",
+    "distillery": "Barrell Craft Spirits",
+    "msrp": 90,
+    "proof": 124.7,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dark fruit, port, rum cask, chocolate, caramel, long rich finish",
+    "rating": 94,
+    "rating_source": "Whiskey Advocate",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Stellum Bourbon",
+    "distillery": "Barrell Craft Spirits",
+    "msrp": 55,
+    "proof": 114.98,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Cherry, caramel, toasted oak, vanilla, rye spice, warm balanced finish",
+    "rating": 91,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Bulleit Bourbon Barrel Strength",
+    "distillery": "Bulleit (Diageo)",
+    "msrp": 60,
+    "proof": 118.2,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "barrel_proof"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Spicy rye, maple, dark oak, dried fruit, pepper, bold long finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "limited"
+  },
+  {
+    "name": "Willett Family Estate 4 Year",
+    "distillery": "Willett",
+    "msrp": 55,
+    "proof": 110,
+    "age_statement": "4 Years",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, cherry, caramel, cinnamon, rye spice, oaky warming finish",
+    "rating": 90,
+    "rating_source": "Breaking Bourbon",
+    "availability": "limited"
+  },
+  {
+    "name": "Noah's Mill",
+    "distillery": "Willett",
+    "msrp": 55,
+    "proof": 114.3,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, dark fruit, baking spice, toasted grain, oak, bold finish",
+    "rating": 89,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Rowan's Creek",
+    "distillery": "Willett",
+    "msrp": 45,
+    "proof": 100.1,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Honey, vanilla, citrus, oak, mild spice, balanced smooth finish",
+    "rating": 88,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "David Nicholson 1843",
+    "distillery": "Lux Row Distillers",
+    "msrp": 30,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, toasted grain, mild fruit, oak, medium finish",
+    "rating": 87,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Early Times Bottled in Bond",
+    "distillery": "Early Times (Sazerac)",
+    "msrp": 25,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "bottled_in_bond"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, corn sweetness, light spice, clean easy finish",
+    "rating": 86,
+    "rating_source": "Breaking Bourbon",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Old Elk Blended Straight Bourbon",
+    "distillery": "Old Elk",
+    "msrp": 55,
+    "proof": 88,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, caramel, honey, light oak, balanced, smooth gentle finish",
+    "rating": 88,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Belle Meade Bourbon Reserve",
+    "distillery": "Nelson's Green Brier",
+    "msrp": 50,
+    "proof": 108.3,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "cask_strength",
+      "small_batch"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Vanilla, caramel, rye spice, cherry, oak, assertive balanced finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Heaven's Door Straight Bourbon",
+    "distillery": "Heaven's Door (Redbreast Holdings)",
+    "msrp": 50,
+    "proof": 92,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Vanilla, toasted oak, mild spice, caramel, gentle warm finish",
+    "rating": 88,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Legent Bourbon",
+    "distillery": "Jim Beam (Beam Suntory)",
+    "msrp": 35,
+    "proof": 94,
+    "age_statement": "NAS",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Dried fruit, wine cask sweetness, vanilla, oak, soft spice finish",
+    "rating": 89,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Penelope Bourbon Barrel Strength",
+    "distillery": "Penelope Bourbon",
+    "msrp": 55,
+    "proof": 115,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "barrel_proof",
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Rich caramel, dark fruit, chocolate, toasted oak, baking spice finish",
+    "rating": 91,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Kentucky Owl Bourbon",
+    "distillery": "Kentucky Owl (Stoli Group)",
+    "msrp": 200,
+    "proof": 118,
+    "age_statement": "Varies",
+    "type": "Kentucky Straight Bourbon",
+    "designation": [
+      "small_batch"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Complex oak, dark fruit, caramel, spice, leather, long rich finish",
+    "rating": 93,
+    "rating_source": "Wine Enthusiast",
+    "availability": "limited"
+  },
+  {
+    "name": "Redemption High Rye Bourbon",
+    "distillery": "Deutsch Family Wine & Spirits",
+    "msrp": 30,
+    "proof": 92,
+    "age_statement": "NAS",
+    "type": "Straight Bourbon",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "high_rye",
+    "tasting_notes": "Rye spice, caramel, vanilla, dried fruit, moderate oak, spicy finish",
+    "rating": 87,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  },
+  {
+    "name": "Uncle Nearest 1856 Premium",
+    "distillery": "Uncle Nearest",
+    "msrp": 60,
+    "proof": 100,
+    "age_statement": "NAS",
+    "type": "Tennessee Whiskey",
+    "designation": [
+      "standard"
+    ],
+    "mashbill": "traditional",
+    "tasting_notes": "Caramel, vanilla, butterscotch, light spice, charcoal, smooth finish",
+    "rating": 90,
+    "rating_source": "Wine Enthusiast",
+    "availability": "widely_available"
+  }
+]
