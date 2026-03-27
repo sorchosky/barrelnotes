@@ -125,10 +125,12 @@ export default async function handler(req, res) {
 
     const data = await response.json()
     const rawText = data.content?.[0]?.text ?? ''
+    // Strip markdown code fences Claude sometimes adds despite instructions
+    const cleaned = rawText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '').trim()
 
     let parsed
     try {
-      parsed = JSON.parse(rawText)
+      parsed = JSON.parse(cleaned)
     } catch {
       console.error('Failed to parse Claude response as JSON:', rawText)
       return res.status(500).json({ error: true, message: "Couldn't read the bottle. Try a clearer photo of the front label." })
