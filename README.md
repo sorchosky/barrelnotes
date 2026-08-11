@@ -1,6 +1,19 @@
 # BarrelNotes
 
-Digital log for recording and reviewing whiskey. Built with React and Vite, deployed to Vercel via the `main` branch.
+Digital log for recording and reviewing whiskey, with a camera scan that reads a bottle label and scores it against your taste history. Built with React and Vite, deployed to Vercel via the `main` branch.
+
+---
+
+## Project Docs
+
+Read these before making changes — they're what Claude Code reads too.
+
+| File | What's in it |
+|---|---|
+| `CLAUDE.md` | The agent contract: autonomy boundaries, check-in cadence, git workflow, quality bar |
+| `docs/PRD.md` | What this is, who it's for, what's in and out of scope |
+| `docs/ARCHITECTURE.md` | Stack, data model, the scan path, known constraints |
+| `docs/DECISIONS.md` | Append-only log of judgment calls already made — don't re-litigate them |
 
 ---
 
@@ -9,6 +22,7 @@ Digital log for recording and reviewing whiskey. Built with React and Vite, depl
 - React 18
 - Vite
 - Tailwind CSS
+- Vercel serverless function (`api/scan.js`) calling the Anthropic API
 
 ---
 
@@ -21,7 +35,23 @@ npm install
 npm run dev
 ```
 
-No environment variables required.
+### Environment variables
+
+Bottle scanning calls the Anthropic API and needs a key. Create `.env.local` in the
+project root:
+
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+`.gitignore` already covers this via `*.local` — don't commit it. Everything except
+the scan feature works without a key.
+
+In production the same variable is set in the Vercel project's environment settings.
+
+**Scanning costs money per call.** There's a 10-scans-per-IP-per-day limit in
+`api/scan.js`, but it lives in memory and resets on cold start — treat it as a speed
+bump, not a ceiling. See `docs/ARCHITECTURE.md`.
 
 ---
 
@@ -32,10 +62,19 @@ No environment variables required.
 | `npm run dev` | Start the local dev server (http://localhost:5173) |
 | `npm run build` | Compile and bundle for production (outputs to `/dist`) |
 | `npm run preview` | Serve the production build locally for pre-deploy verification |
+| `scripts/new-feature.sh <slug>` | Create a worktree + branch for new work, cut from `dev` |
+| `scripts/release.sh` | Show what's stacked on `dev` and print the release PR link (read-only) |
 
 ---
 
 ## Git Workflow
+
+Three tiers: work lands on `dev` continuously, and `dev` promotes to `main` on a
+slower release cadence. **Merging is not shipping** — only the release reaches users.
+
+```
+feature/<slug> ──PR──> dev ──release PR──> main ──> Vercel production
+```
 
 ### Branch Model
 
@@ -49,33 +88,56 @@ No environment variables required.
 
 ### Feature Development
 
+One worktree per feature, so several can be in flight without stashing:
+
 ```bash
-# 1. Start from an up-to-date dev
-git checkout dev
-git pull origin dev
-
-# 2. Cut a feature branch
-git checkout -b feature/<name>
-
-# 3. Do your work, then commit
-git add <files>
-git commit -m "feat: short description"
-
-# 4. Push and open a PR targeting dev
-git push -u origin feature/<name>
+scripts/new-feature.sh bottle-search
+cd ../barrelnotes-worktrees/bottle-search
+npm install
 ```
 
-Open a PR from `feature/<name>` → `dev`. After merge, delete the feature branch.
+That cuts `feature/bottle-search` from the latest `origin/dev` and copies your
+`.env.local` across. Prefix the slug (`fix/...`, `docs/...`) for a different branch type.
+
+Work, commit, then push and open a PR targeting `dev`:
+
+```bash
+git add <files>
+git commit -m "feat: short description"
+git push -u origin feature/bottle-search
+```
+
+After merge, delete the branch and clean up the worktree with `git worktree remove`.
+
+<details>
+<summary>Without worktrees</summary>
+
+```bash
+git checkout dev && git pull origin dev
+git checkout -b feature/<name>
+# work, commit
+git push -u origin feature/<name>
+```
+</details>
 
 ### Shipping to Production
 
-When `dev` is stable and ready to release, open a PR from `dev` → `main`. Merging that PR triggers an automatic Vercel deployment — no additional steps required.
+When `dev` is stable and enough has accumulated to be worth a release:
+
+```bash
+scripts/release.sh    # lists what's waiting, prints the compare URL
+```
+
+Open the `dev` → `main` PR and merge it as a **merge commit, not a squash** —
+squashing flattens the individual features into one opaque commit and leaves `dev`
+and `main` permanently diverged. Merging triggers the Vercel production deploy.
 
 ---
 
 ## Commit Messages
 
-Follow [Conventional Commits](https://www.conventionalcommits.org/):
+Follow [Conventional Commits](https://www.conventionalcommits.org/), imperative mood,
+no filler — "add score validation", not "this commit adds some validation logic":
 
 | Prefix | Use for |
 |---|---|
@@ -90,4 +152,12 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## Deployment
 
-`main` is connected to Vercel. Every merge to `main` triggers a production deploy automatically. Preview builds are not currently configured — use `npm run preview` locally to verify before merging to `main`.
+`main` is connected to Vercel. Every merge to `main` triggers a production deploy
+automatically. `vercel.json` pins the framework, build command, and output directory
+so the build doesn't depend on auto-detection.
+
+`api/scan.js` deploys as a serverless function alongside the static build. It needs
+`ANTHROPIC_API_KEY` set in the Vercel project's environment variables — without it,
+the app deploys fine and scanning fails at runtime.
+
+Use `npm run preview` locally to verify a production build before opening a release PR.
