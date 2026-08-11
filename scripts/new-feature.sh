@@ -26,7 +26,8 @@ BASE="${2:-${BASE_BRANCH:-dev}}"
 if [ "$BASE" = "main" ]; then
   echo "Refusing to cut a work branch from main."
   echo "BarrelNotes cuts from dev; main only ever receives release PRs."
-  echo "Pass an explicit base branch if you really mean something else."
+  echo "If you genuinely need to branch off production — a hotfix that can't"
+  echo "wait for dev — do it deliberately with git worktree add, not this script."
   exit 1
 fi
 

@@ -14,7 +14,8 @@ REPO_ROOT="$(git rev-parse --show-toplevel)"
 echo "Fetching latest dev and main..."
 git -C "$REPO_ROOT" fetch origin dev main
 
-AHEAD="$(git -C "$REPO_ROOT" rev-list --count origin/main..origin/dev)"
+# Count and list the same set — merges are PR plumbing, not release notes.
+AHEAD="$(git -C "$REPO_ROOT" rev-list --count --no-merges origin/main..origin/dev)"
 
 if [ "$AHEAD" -eq 0 ]; then
   echo ""
@@ -33,11 +34,19 @@ git -C "$REPO_ROOT" diff --stat origin/main...origin/dev | tail -n 20
 
 # Derive the compare URL from the origin remote, handling both SSH and HTTPS.
 REMOTE="$(git -C "$REPO_ROOT" remote get-url origin)"
-SLUG="$(printf '%s' "$REMOTE" | sed -E 's#^git@github\.com:##; s#^https://github\.com/##; s#\.git$##')"
 
 echo ""
-echo "Open the release PR:"
-echo "  https://github.com/${SLUG}/compare/main...dev"
+case "$REMOTE" in
+  git@github.com:*|https://github.com/*)
+    SLUG="$(printf '%s' "$REMOTE" | sed -E 's#^git@github\.com:##; s#^https://github\.com/##; s#\.git$##')"
+    echo "Open the release PR:"
+    echo "  https://github.com/${SLUG}/compare/main...dev"
+    ;;
+  *)
+    echo "Open the release PR from dev into main."
+    echo "  (origin is not a GitHub remote: $REMOTE)"
+    ;;
+esac
 echo ""
 echo "Merge it as a MERGE COMMIT, not a squash — squashing flattens the"
 echo "features into one commit and leaves dev and main permanently diverged."
